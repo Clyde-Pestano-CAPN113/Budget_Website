@@ -1,0 +1,29 @@
+#fi-img {
+  display: grid;
+  justify-content: center;
+}
+#fi-img1 {
+  border-radius: 200px;
+  width: 200px;
+  padding: 40px;
+  margin-left: 160px;
+}
+#fi-img2 {
+  border-radius: 200px;
+  width: 200px;
+  padding: 100px;
+}
+#fi-img3 {
+  border-radius: 50px;
+  width: 300px;
+}
+#fi-img4 {
+  border-radius: 200px;
+  width: 200px;
+  margin-left: 350px;
+  padding: 100px;
+}
+tr, th {
+  border: 1px solid black;
+  background-color: lightblue;
+}
