@@ -1,3 +1,4 @@
+/*Finance and Insurance*/
 #fi-img {
   display: grid;
   justify-content: center;
@@ -26,4 +27,13 @@
 tr, th {
   border: 1px solid black;
   background-color: lightblue;
+}
+/*Family*/
+#fa_div {
+  display: grid;
+  justify-content: center;
+}
+#childcare_and_education {
+  height: 400px;
+  width: 1000px;
 }
