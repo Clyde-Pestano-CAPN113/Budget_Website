@@ -191,4 +191,49 @@ header {
   color: #beccfd;
 }
 
+footer {
+  background-color: #222222; 
+  color: #ffffff;
+}
+footer a {
+  color: #ff9800;
+}
+footer a:hover {
+  color: #e68a00;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer .btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-footer .btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.home-container .home-image {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.home-container .home-image:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+}
+
+.tools-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tools-section .card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
