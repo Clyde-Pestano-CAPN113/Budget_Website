@@ -1,4 +1,4 @@
-/*Finance and Insurance*/
+/*everyday money*/
 #fi-h1 {
   text-align: center;
   font-family: 'Monoton', sans-serif;
@@ -49,12 +49,60 @@ thead {
   border: 1px solid black;
   background-color: rgb(68, 62, 62);
 }
-/*Family*/
-#fa_div {
+#em_utilities_and_services, #fc_family_ctivities {
   display: grid;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
 }
-#childcare_and_education {
-  height: 400px;
-  width: 1000px;
+#em_miscellaneous_expenses {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+}
+#em_miscellaneous_expenses img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#em_miscellaneous_expenses p {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 50px;
+  text-align: center;
+}
+/*Family and care*/
+#fc_body {
+  background-color: rgb(37, 134, 134);
+}
+#fc_ul {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(37, 134, 134);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 50px;
+}
+#fc_childcare {
+  background-color:whitesmoke;
+  border: 5px solid rgb(173, 218, 221);
+}
+#fc_childcare p {
+  background-color: rgb(138, 209, 221);
+  padding: 30px;
+}
+#fc_elder_care {
+  width: 996px;
+  height: 560px;
+}
+#fc_emotional_support {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
