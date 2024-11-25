@@ -1,57 +1,73 @@
 /*everyday money*/
-#fi-h1 {
+#em_body {
+  background-color: rgb(118, 146, 206);
+}
+#em_h1 {
   text-align: center;
   font-family: 'Monoton', sans-serif;
-  font-size: 50px;
+  font-size: 100px;
 }
-#fi-h3 {
+#em_p {
   text-align: center;
   font-family: "Anton SC",serif;
+  font-size: 30px;
 }
-/* make the pictures in the center*/
-#fi-img {
-  display: grid;
-  justify-content: center;
-}
-#fi-img1 {
-  border-radius: 200px;
-  width: 200px;
-  padding: 40px;
-  margin-left: 160px;
-}
-#fi-img2 {
-  border-radius: 200px;
-  width: 200px;
-  padding: 100px;
-}
-#fi-img3 {
-  border-radius: 50px;
-  width: 300px;
-}
-#fi-img4 {
-  border-radius: 200px;
-  width: 200px;
-  margin-left: 350px;
-  padding: 100px;
-}
-#fi-h2 {
+h2 {
+  font-size: 40px;
   text-align: center;
   font-family: 'Monoton', sans-serif;
-  font-size: 30px;
-} 
-#fi-dollar {
+}
+#em_img {
+  display: grid;
+  justify-content: center;
+  background-color: rgb(76, 97, 153);
+}
+#em_img1 {
+  border-radius: 250px;
+  width: 300px;
+  margin-left: 500px;
+  padding: 100px;
+}
+#em_img2 {
+  border-radius: 250px;
+  width: 300px;
+  padding: 100px;
+}
+#em_img3 {
+  border-radius: 250px;
+  width: 500px;
+  justify-content: center;
+}
+#em_img4 {
+  border-radius: 250px;
+  width: 300px;
+  margin-left: 300px;
+}
+#em_video, #fc_video, #bf_video {
+  text-align: center;
+}
+#em_dollar {
   width: 50px;
 }
-tbody {
-  background-color: rgb(84, 84, 194);
-}
-thead {
-  border: 1px solid black;
-  background-color: rgb(68, 62, 62);
-}
-#em_utilities_and_services, #fc_family_ctivities {
+#em_utilities_and_services {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+#em_ul {
+  list-style-position: inside;
+  border: 5px dashed rgb(105, 105, 150);
+}
+#em_leisure_and_entertainment_div {
+  border: 10px dashed rgb(105, 105, 150);
+}
+#em_utilities_and_services {
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(76, 97, 153);
+}
+h3 {
+  font-size: 50px;
+  text-align: center;
 }
 #em_miscellaneous_expenses {
   position: relative;
@@ -69,19 +85,50 @@ thead {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: black;
+  background-color: rgb(51, 119, 136);
   padding: 10px;
   border-radius: 5px;
   font-size: 50px;
   text-align: center;
 }
+#em_ol {
+  font-size: 30px;
+  padding: 20px;
+  line-height: 40px;
+  list-style-position: inside;
+  background: linear-gradient(to bottom right, rgb(76, 97, 153) 50%, rgb(118, 127, 180) 50%);
+}
+tbody {
+  background-color: rgb(84, 84, 194);
+}
+thead {
+  border: 1px solid black;
+  background-color: rgb(68, 62, 62);
+}
 /*Family and care*/
 #fc_body {
   background-color: rgb(37, 134, 134);
 }
+#fc_title_div {
+  text-align: center;
+
+
+
+
+
+}
+#fc_title {
+  font-family: "Anton SC", serif;
+  font-size: 100px;
+  text-align: center;
+}
+#fc_title_img, #fc_elder_care {
+  display: grid;
+  place-items: center;
+}
 #fc_ul {
   position: absolute;
-  top: 40%;
+  top: 70%;
   left: 15%;
   transform: translate(-50%, -50%);
   color: white;
@@ -91,18 +138,97 @@ thead {
   font-size: 50px;
 }
 #fc_childcare {
-  background-color:whitesmoke;
+  background-color: rgb(223, 216, 216);
   border: 5px solid rgb(173, 218, 221);
 }
 #fc_childcare p {
   background-color: rgb(138, 209, 221);
   padding: 30px;
 }
-#fc_elder_care {
+#fc_elder_care_img {
   width: 996px;
   height: 560px;
 }
 #fc_emotional_support {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.7fr 0.7fr 0.7fr;
+}
+#fc_h2 {
+  font-family: "Anton SC", serif;
+}
+#fc_p {
+  font-size: 40px;
+  text-align: center;
+}
+#fc_video-info {
+  font-size: 25px;
+  text-align: center;
+}
+#fc_video_p {
+  font-size: 40px;
+  text-align: center;
+}
+#fc_ontario {
+  text-align: center;
+  font-size: 40px;
+  border: 20px groove rgb(173, 218, 221);
+  list-style-position: inside;
+}
+#fc_emotional_support_info1 {
+  border: 5px solid rgb(173, 218, 221);
+}
+#fc_emotional_support_info2, #fc_emotional_support_info3 {
+  background-color: rgb(138, 209, 221);
+  padding: 40px;
+  font-size: 40px;
+}
+#fc_family_activities {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  background-color: rgb(138, 209, 221);
+}
+#fc_family_activities_img {
+  margin-left: 10%;
+}
+#fc_family_activities_div {
+  font-size: 20px;
+  border: 20px solid rgb(173, 218, 221);
+  font-weight: bold;
+}
+#fc_family_activities_p {
+  background-color: white;
+  border-radius: 30px;
+}
+/*benefits*/
+#bf_body {
+  background-color: #dd7458;
+}
+#bf_h1 {
+  font-family: "Bowlby One", sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
+.card-title {
+  border-radius: 5px;
+  font-size: 50px;
+  font-family: "Lacquer", system-ui;
+}
+.row {
+  border: 10px dotted #b0bacd;
+}
+.card-text {
+  background-color: #fed686;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.btn {
+  background-color: #fae2c3;
+}
+#bf_h2 {
+  font-family: "Bowlby One", sans-serif;
+  padding-top: 30px;
+}
+#bf_p {
+  font-size: 30px;
+  text-align: center;
 }

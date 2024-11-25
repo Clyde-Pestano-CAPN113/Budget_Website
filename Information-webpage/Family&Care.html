@@ -3,51 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Big+Shoulders+Stencil+Display:wght@100..900&family=Bungee&family=Jaro:opsz@6..72&family=Monoton&display=swap" rel="stylesheet">
   <title>Family & Care</title>
   <link rel="stylesheet" href="information.css">
 
 </head>
 <body id="fc_body">
-  <div><!--https://infopeel.ca/child-care-and-early-years/resources-2/-->
-    <h1>Family & Care</h1>
-    <h3>Family and care refers to the financial and emotional support systems that individuals provide for their family members, encompassing both direct care responsibilities and broader familial relationships. This concept includes several key aspects:</h3>
-    <img src="information_img/cute-family-concept-arrangement-with-copy-space_23-2148485832.jpg">
+  <div id="fc_title_div">
+    <div><!--https://infopeel.ca/child-care-and-early-years/resources-2/-->
+      <h1 id="fc_title">Family & Care</h1>
+      <p id="fc_p">Family and care refers to the financial and emotional support systems that individuals provide for their family members, encompassing both direct care responsibilities and broader familial relationships. This concept includes several key aspects:</p>
+      <img id="fc_title_img" src="information_img/cute-family-concept-arrangement-with-copy-space_23-2148485832.jpg">
+    </div>
+    <div id="fc_ul">
+      <ul>
+        <li>Childcare</li>
+        <li>Elder Care</li>
+        <li>Health and Wellness</li>
+        <li>Emotional Support</li>
+        <li>Family Activities</li>
+      </ul>
+    </div>
   </div>
-  <div id="fc_ul">
-    <ul>
-      <li>Childcare</li>
-      <li>Elder Care</li>
-      <li>Health and Wellness</li>
-      <li>Emotional Support</li>
-      <li>Family Activities</li>
-    </ul>
-  </div>
+  
   <!--Childcare-->
   <div>
     <div id="fc_childcare">
-      <h2>Childcare</h2>
-      <p>This involves the responsibilities and expenses associated with raising children, including daycare, education, and extracurricular activities that support their development and well-being.</p>
+      <h2 id="fc_h2">Childcare</h2>
+      <p id="fc_p">This involves the responsibilities and expenses associated with raising children, including daycare, education, and extracurricular activities that support their development and well-being.</p>
     </div>
   </div>
   <!--Elder Care-->
-  <h2>Elder Care</h2>
-  <p>This pertains to the care and support provided to aging family members, which may include financial assistance, health care services, and daily living support to ensure their comfort and safety.</p>
-  <img id="fc_elder_care" src="information_img/istockphoto-1460928397-2048x2048.jpg">
+  <h2 id="fc_h2">Elder Care</h2>
+  <p id="fc_p">This pertains to the care and support provided to aging family members, which may include financial assistance, health care services, and daily living support to ensure their comfort and safety.</p>
+  <div id="fc_elder_care">
+    <img id="fc_elder_care_img" src="information_img/istockphoto-1460928397-2048x2048.jpg">
+  </div>
   <!--Health and Wellness-->
-  <h2>Health and Wellness</h2>
-  <p> Family and care also encompass the health-related expenses and services that families invest in to maintain the physical and mental well-being of all members, including health insurance, medical care, and wellness programs.</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/guQS0awCs4I?si=dJtoOMbrj7W8f29H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <p>Accessing Mental Health Care at Humber College</p>
+  <h2 id="fc_h2">Health and Wellness</h2>
+  <p id="fc_p"> Family and care also encompass the health-related expenses and services that families invest in to maintain the physical and mental well-being of all members, including health insurance, medical care, and wellness programs.</p>
+  <div id="fc_video">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/guQS0awCs4I?si=dJtoOMbrj7W8f29H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <p id="fc_video-info">Accessing Mental Health Care at Humber College</p>
   <div><!--https://www.budget.canada.ca/2024/report-rapport/chap2-en.html-->
-    <p>
-      The Canada Health Act helps ensure that all eligible residents of Canada have reasonable access to insured health services, without financial barriers. No Canadian should have to pay for medically necessary health care services, and the federal government is continuously working to uphold this principle for every Canadian.
-    </p>
-    <p>
-      As part of the federal government's work to deliver better health outcomes for Canadians, it has now signed agreements with all provinces and territories to begin delivering the $25 billion in new funding available in the ten-year health care plan through bilateral agreements.
-    </p>
+    <div id="fc_video_p">
+      <p>
+        The Canada Health Act helps ensure that all eligible residents of Canada have reasonable access to insured health services, without financial barriers. No Canadian should have to pay for medically necessary health care services, and the federal government is continuously working to uphold this principle for every Canadian.
+      </p>
+      <p>
+        As part of the federal government's work to deliver better health outcomes for Canadians, it has now signed agreements with all provinces and territories to begin delivering the $25 billion in new funding available in the ten-year health care plan through bilateral agreements.
+      </p>
+    </div>
     <h3>Ontario</h3>
-    <p>$2.5 billion over three years announced on February 9, 2024</p>
-    <ul>
+    <p id="fc_p">$2.5 billion over three years announced on February 9, 2024</p>
+    <ul id="fc_ontario">
       <li>Expand enrollment in health care education programs by over 700 spots;</li>
       <li>Modernize digital infrastructure, including information reporting, collection, and sharing; and,</li>
       <li>Make health care more convenient, connected, and patient-centred by expanding the availability of electronic health information and increasing the number of health professionals who can securely access and share it.</li>
@@ -55,35 +67,38 @@
   </div>
   <!--Emotional Support-->
   <div id="fc_emotional_support">
-    <div>
-      <h2>Emotional Support</h2>
-      <p>Beyond financial aspects, family and care involve the emotional and psychological support provided among family members, fostering strong relationships and a sense of security.</p>
+    <div id="fc_emotional_support_info1">
+      <h2 id="fc_h2">Emotional Support</h2>
+      <p id="fc_p">Beyond financial aspects, family and care involve the emotional and psychological support provided among family members, fostering strong relationships and a sense of security.</p>
     </div>
-    <div>
-      <p><img width="50px" src="information_img/respect-512.webp">respectful</p>
-      <p><img width="50px" src="information_img/judgmental-partial-unfair-evaluate-decide-1024.webp">nonjudgmental</p>
-      <p><img width="50px" src="information_img/418_Care_compassion_feelings_heart_love-512.webp">compassionate</p>
+    <div id="fc_emotional_support_info2">
+      <p><img width="50px" src="information_img/respect-512.webp">  respectful</p>
+      <p><img width="50px" src="information_img/judgmental-partial-unfair-evaluate-decide-1024.webp"> nonjudgmental</p>
+      <p><img width="50px" src="information_img/418_Care_compassion_feelings_heart_love-512.webp"> compassionate</p>
     </div>
-    <div>
-      <p><img width="50px" src="information_img/friendship-512.webp">unconditional</p>
-      <p><img width="50px" src="information_img/user-centered-1-879546.webp">person-centered</p>
+    <div id="fc_emotional_support_info3">
+      <p><img width="50px" src="information_img/friendship-512.webp"> unconditional</p>
+      <p><img width="50px" src="information_img/user-centered-1-879546.webp"> person-centered</p>
     </div>
   </div>
   <!--Family Activities-->
-  <h2>Family Activities</h2>
-  <p>Engaging in shared experiences, such as family outings, vacations, and celebrations, is also part of family and care, as these activities strengthen bonds and create lasting memories.</p>
-  <div id="fc_family_ctivities">
+  
+  <h2 id="fc_h2">Family Activities</h2>
+  <p id="fc_p">Engaging in shared experiences, such as family outings, vacations, and celebrations, is also part of family and care, as these activities strengthen bonds and create lasting memories.</p>
+  <div id="fc_family_activities">
     <div>
-      <img src="information_img/pngtree-illustration-of-family-theme-activities-png-image_6728604.png">
+      <img id="fc_family_activities_img" src="information_img/pngtree-illustration-of-family-theme-activities-png-image_6728604.png">
     </div>
-    <div>
-      <p><img width="50px" src="information_img/holidays-png-5579.png">Vacations: Opportunities for exploration and adventure, which can enhance learning and appreciation for different cultures.</p>
-      <p><img width="50px" src="information_img/family-png-29910.png">Family Outings: For example, Zoo or Aquarium Visits, Educational and entertaining, these outings can spark curiosity in children.</p>
-      <p><img width="50px" src="information_img/holidays-png-5585.png">Celebrations: Marking special occasions helps families come together and celebrate milestones.</p>
-      <p><img width="50px" src="information_img/sports-activities-png-23797.png">Kids' Extracurricular Activities: In the red: more than one in four (27%) agree (5% strongly/21% somewhat) they've gone into debt to finance their children's activities.</p>
+    <div id="fc_family_activities_div">
+      <p id="fc_family_activities_p"><img width="50px" src="information_img/holidays-png-5579.png"> Vacations: Opportunities for exploration and adventure, which can enhance learning and appreciation for different cultures.</p>
+      <p id="fc_family_activities_p"><img width="50px" src="information_img/family-png-29910.png"> Family Outings: For example, Zoo or Aquarium Visits, Educational and entertaining, these outings can spark curiosity in children.</p>
+      <p id="fc_family_activities_p"><img width="50px" src="information_img/holidays-png-5585.png"> Celebrations: Marking special occasions helps families come together and celebrate milestones.</p>
+      <p id="fc_family_activities_p"><img width="50px" src="information_img/sports-activities-png-23797.png"> Kids' Extracurricular Activities: In the red: more than one in four (27%) agree (5% strongly/21% somewhat) they've gone into debt to finance their children's activities.</p>
     </div>
   </div>
-  <!--Budget Planner-->
+
+  <!--Baby costs Calculator-->
+  <h2 id="fc_h2">Baby costs Calculator</h2>
 
   https://infopeel.ca/child-care-and-early-years/resources-2/
 
