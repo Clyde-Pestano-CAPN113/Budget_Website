@@ -1,8 +1,3 @@
-document.getElementById("start-calculator").addEventListener("click", function () {
-    // Redirect to the redundancy calculator page
-    window.location.href = "redundancypaycalculator.html";
-});
-
 document.getElementById("redundancy-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
