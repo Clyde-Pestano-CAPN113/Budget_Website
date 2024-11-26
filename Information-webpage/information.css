@@ -142,16 +142,6 @@ h3 {
 #add_button, tfoot {
   text-align: left;
 }
-/*
-tbody {
-  background-color: rgb(84, 84, 194);
-}
-thead {
-  border: 1px solid black;
-<<<<<<< HEAD
-  background-color: lightblue;
-}
-
 nav {
   background-color: #333;
   color: #fff;
@@ -218,7 +208,7 @@ header {
   width: 1534px;
   background-color: rgb(68, 62, 62);
 }
-  */
+
 /*Family and care*/
 #fc_body {
   background-color: rgb(37, 134, 134);
