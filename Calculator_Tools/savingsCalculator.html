@@ -5,122 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savings Calculator</title>
     <link rel="stylesheet" href="../home-page/style-homepage.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script defer src="savingCalculator.js"></script>
 </head>
 <body>
-    <header>
-        <a href="logo">
-            <img src="/image/logo.png" alt="logo" class="logo">
-        </a>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
-    </header>
+  <header>
+    <a href="logo">
+      <img src="../image/logo.png" alt="logo" class="logo">
+    </a>
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Benefits
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">Benefits and Work</a></li>
-                  <li><a class="dropdown-item" href="#">Benefits if You Have Children</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Benefits Calculator</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Everyday Money
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">Isurance</a></li>
-                  <li><a class="dropdown-item" href="#">Banking and Payments</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Budget Planner</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Family & Care
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Childcare</a></li>
-                  <li><a class="dropdown-item" href="#">Elder Care</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Baby costs calculator </a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  House
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">Renting</a></li>
-                  <li><a class="dropdown-item" href="#">Mortgages and Homebuying</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Mortgage Calculator</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pensions
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">Tax and Pensions</a></li>
-                  <li><a class="dropdown-item" href="#">Pensions and Retirement</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Pension Calculator</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Savings
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">How to save</a></li>
-                  <li><a class="dropdown-item" href="#">Investing</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Savings Calculator</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Work
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">Employment</a></li>
-                  <li><a class="dropdown-item" href="#">Losing your job</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Redundancy pay Calculator</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tools and calculators
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-                  <li><a class="dropdown-item" href="#">Benefits Calculator</a></li>
-                  <li><a class="dropdown-item" href="#">Baby Costs Calculator</a></li>
-                  <li><a class="dropdown-item" href="#">Mortgage Calculator</a></li>
-                  <li><a class="dropdown-item" href="#">Pension Calculator</a></li>
-                  <li><a class="dropdown-item" href="#">Savings Calculatorr</a></li>
-                  <li><a class="dropdown-item" href="#">Redundancy pay Calculator</a></li>
-                  <li><a class="dropdown-item" href="#">Budget Planner</a></li>
-                  
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Benefits
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Benefits.html">Benefits and Work</a></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits.html">Benefits if You Have Children</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-family-benefits-calculator.html">Benefits Calculator</a></li>
             </ul>
-          </div>
-        </div>
-    </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Everyday Money
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Insurance.html">Isurance</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../Budget_Tool/Budget_Planner.html">Budget Planner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Family & Care
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Childcare.html">Childcare</a></li>
+              <li><a class="dropdown-item" href="https://caringforseniors.ca/?gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyuoGVgvo5QK00PO8BqNRgRR1SpnEO3q_JIBe9fGCJPIb9r5aNgpu0xoClwkQAvD_BwE">Elder Care</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.babycenter.com/baby-cost-calculator">Baby costs calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              House
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Renting.html">Renting</a></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/financial-consumer-agency/services/buying-home.html">Mortgages and Homebuying</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/mortageCalculator.html">Mortgage Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pensions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="">Tax and Pensions</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html">Pension Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Savings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="#">How to save</a></li>
+              <li><a class="dropdown-item" href="#">Investing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tools and calculators
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Calculator_Tools/benefitsCalculator.html">Benefits Calculator</a></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/babyCostsCalculator.html">Baby Costs Calculator</a></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/mortageCalculator.html">Mortgage Calculator</a></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/pensionCalculator.html">Pension Calculator</a></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/savingsCalculator.html">Savings Calculatorr</a></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/usingRedundancyPayCalculator.html">Redundancy pay Calculator</a></li>
+              <li><a class="dropdown-item" href="../Budget_Tool/Budget_Planner.html">Budget Planner</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
     <main>
         <h1>Savings Calculator</h1>
@@ -146,82 +135,80 @@
     </main>
 
     <div class="banner">
-        <div class="arrow"></div>
-        <span>
-            <strong>Worried about debt?</strong> 
-            <a href="#">Get free, confidential help</a>
-        </span>
+      <div class="arrow"></div>
+      <span>
+        <strong>Worried about debt?</strong> 
+        <a href="#">Get free, confidential help</a>
+      </span>
     </div>
           
     <section class="tools-section">
-        <div class="container">
-            <div class="row">
-          
-                <div class="col-md-4">
-                  <div class="mb-3">
-                     <i class="bi bi-calculator" style="font-size: 4rem; color: #001A5E;"></i>
-                  </div>
-                  <h2 class="tools-heading">Popular tools and calculators</h2>
-                  <a href="#" class="tools-link">All tools & calculators</a>
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-md-4">
+            <div class="mb-3">
+               <i class="bi bi-calculator" style="font-size: 4rem; color: #001A5E;"></i>
+            </div>
+            <h2 class="tools-heading">Popular tools and calculators</h2>
+            <a href="#" class="tools-link">All tools & calculators</a>
+          </div>
+    
+    
+          <div class="col-md-8">
+            <div class="row g-3">
+    
+              <div class="col-md-4">
+                <div class="card p-3">
+                  <a href="https://www.debtadvicecanada.ca/?utm_source=google&utm_medium=ppc&utm_campaign=debt-help-e&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyhsYHgKml-Q1KKp-6_YucF05EaCsVmvIOwg5SN9NNnk0NcQiIgHxxhoCMSsQAvD_BwE" class="text-decoration-none">
+                    <strong style="color: #001A5E;">Worried about debt?</strong><br>
+                    <span class="text-custom">Find out where to get free, confidential help now</span>
+                  </a>
                 </div>
-          
-          
-                <div class="col-md-8">
-                  <div class="row g-3">
-          
-                    <div class="col-md-4">
-                      <div class="card p-3">
-                        <a href="https://example.com" class="text-decoration-none">
-                          <strong style="color: #001A5E;">Worried about debt?</strong><br>
-                          <span class="text-custom">Find out where to get free, confidential help now</span>
-                        </a>
-                      </div>
-                    </div>
-          
-                
-                    <div class="col-md-4">
-                      <div class="card p-3">
-                        <a href="https://example.com" class="text-decoration-none">
-                          <strong style="color: #001A5E;">Budget planner</strong><br>
-                          <span class="text-custom">Get in control of household spending</span>
-                        </a>
-                      </div>
-                    </div>
-          
-                    <div class="col-md-4">
-                      <div class="card p-3">
-                        <a href="https://example.com" class="text-decoration-none">
-                          <strong style="color: #001A5E;">Mortgage calculator</strong><br>
-                          <span class="text-custom">A helping hand on the property ladder</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3">
+                  <a href="../Budget_Tool/Budget_Planner.html" class="text-decoration-none">
+                    <strong style="color: #001A5E;">Budget planner</strong><br>
+                    <span class="text-custom">Get in control of household spending</span>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                <div class="card p-3">
+                  <a href="https://www.td.com/ca/en/personal-banking/products/mortgages/calculators-tools?GOOGLE&Mortgage+Calculator+-+Generic+-+English+(25_S_RL_RMO_AO_ACQ_ENFR)&Calculator+-+Generic&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyu34X6JYmTd7wEjMe8Nv_daVIYkyhnqmQe15B4HKRI4-CgJXqQIICRoCSj8QAvD_BwE&gclsrc=aw.ds" class="text-decoration-none">
+                    <strong style="color: #001A5E;">Mortgage calculator</strong><br>
+                    <span class="text-custom">A helping hand on the property ladder</span>
+                  </a>
                 </div>
               </div>
             </div>
-    </section>
-
-    <footer class="bg-dark text-center p-3 mt-5">
-        <div class="container">
-            <p class="mb-1">&copy; BUDGET PLANNER</p>
-            <div>
-                <a href="https://www.facebook.com" target="_blank" class="me-3">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="me-3">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="me-3">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    
+    <footer class="bg-dark text-center p-3 mt-5">
+      <div class="container">
+          <p class="mb-1">&copy; BUDGET PLANNER</p>
+          <div>
+              <a href="https://www.facebook.com" target="_blank" class="me-3">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="me-3">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="me-3">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+          </div>
+      </div>
     </footer>
-      
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
     </script>
 </body>
