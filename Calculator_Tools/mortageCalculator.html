@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<html></html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header with Navigation and Search Bar</title>
-  <link rel="stylesheet" href="style-homepage.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="../home-page/style-homepage.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="mortageCalculator.js"></script>
 </head>
 <body>
-
   <header>
     <a href="logo">
       <img src="../image/logo.png" alt="logo" class="logo">
@@ -98,7 +96,7 @@
               Tools and calculators
             </a>
             <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
-              <li><a class="dropdown-item" href="#">Benefits Calculator</a></li>
+              <li><a class="dropdown-item" href="../Calculator_Tools/benefitsCalculator.html">Benefits Calculator</a></li>
               <li><a class="dropdown-item" href="../Calculator_Tools/babyCostsCalculator.html">Baby Costs Calculator</a></li>
               <li><a class="dropdown-item" href="../Calculator_Tools/mortageCalculator.html">Mortgage Calculator</a></li>
               <li><a class="dropdown-item" href="../Calculator_Tools/pensionCalculator.html">Pension Calculator</a></li>
@@ -112,150 +110,103 @@
       </div>
     </div>
   </nav>
-  <div class="home-container">
-    <img src="../image/home-image.jpg" alt="home-image" class="home-image">
-    <div class="home-text">
-    <div class="text">
-      <h1>WE CAN HELP</h1>
+
+    <main>
+        <h1>Mortgage Calculator</h1>
+        <form id="calculator-form">
+            <label for="principal">Mortgage Amount (CAD):</label>
+            <input type="number" id="principal" required>
+            
+            <label for="annualRate">Annual Interest Rate (%):</label>
+            <input type="number" step="0.01" id="annualRate" required>
+            
+            <label for="years">Loan Term (Years):</label>
+            <input type="number" id="years" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <section id="results" style="display: none;">
+            <h3>Results</h3>
+            <p id="result-output"></p>
+        </section>
+    </main>
+
+    <div class="banner">
+      <div class="arrow"></div>
+      <span>
+        <strong>Worried about debt?</strong> 
+        <a href="#">Get free, confidential help</a>
+      </span>
     </div>
-    <div class="link-items" ><ul class="link-container">
-      <li>Benefits</li>
-      <li>Everyday Money</li>
-      <li>Fammily & care</li>
-      <li>House</li>
-      <li>Pensions</li>
-      <li>Savings</li>
-      <li>Tools and calculators</li>
-    </ul></div>
-  </div>
-</div>
-
-<div class="container py-5">
-  <h1 class="text-center mb-4">HOT TOPICS</h1>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <a href="https://www.bankrate.com/investing/best-investments/">
-        <div class="card h-100">
-          <img src="../image/card1.jpg" class="card-img-top" alt="Project Image">
-          <div class="card-body">
-            <h5 class="card-title">Investment</h5>
-            <p class="card-text">Looking for ways to invest?.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.bankrate.com/investing/best-investments/" class="btn btn-dark w-100">View topic</a>
-          </div>
-        </div>
-      </a>    
-    </div>
-    <div class="col">
-      <a href="https://nosidebar.com/10-little-shopping-habits-to-help-you-save-money/">
-        <div class="card h-100">
-          <img src="../image/card2.jpg" class="card-img-top" alt="Project Image" height="276px">
-          <div class="card-body">
-            <h5 class="card-title">Shopping</h5>
-            <p class="card-text">Shopping habbits that can help you save money.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.bankrate.com/investing/best-investments/" class="btn btn-dark w-100">View topic</a>
-          </div>
-        </div>
-      </a>  
-    </div>   
-    <div class="col">
-      <a href="https://www.webroot.com/ca/en/resources/tips-articles/10-tips-to-safer-shopping-online?srsltid=AfmBOoqkyA3B3jT5xbms7VW-UKep_E_DPwoyX7qM0hYYD2Vg7Yn_6QYi">
-        <div class="card h-100">
-          <img src="../image/online-shopping.jpg" class="card-img-top" alt="Project Image">
-          <div class="card-body">
-            <h5 class="card-title">Online Shopping</h5>
-            <p class="card-text">How to shop online effectivley.</p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.bankrate.com/investing/best-investments/" class="btn btn-dark w-100" >View topic</a>
-          </div>
-        </div>
-      </a>
-      
-    </div>
-  </div>
-</div>
-
-<div class="banner">
-  <div class="arrow"></div>
-  <span>
-    <strong>Worried about debt?</strong> 
-    <a href="#">Get free, confidential help</a>
-  </span>
-</div>
-
-<section class="tools-section">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-4">
-        <div class="mb-3">
-           <i class="bi bi-calculator" style="font-size: 4rem; color: #001A5E;"></i>
-        </div>
-        <h2 class="tools-heading">Popular tools and calculators</h2>
-        <a href="#" class="tools-link">All tools & calculators</a>
-      </div>
-
-
-      <div class="col-md-8">
-        <div class="row g-3">
-
+          
+    <section class="tools-section">
+      <div class="container">
+        <div class="row">
+    
           <div class="col-md-4">
-            <div class="card p-3">
-              <a href="https://www.debtadvicecanada.ca/?utm_source=google&utm_medium=ppc&utm_campaign=debt-help-e&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyhsYHgKml-Q1KKp-6_YucF05EaCsVmvIOwg5SN9NNnk0NcQiIgHxxhoCMSsQAvD_BwE" class="text-decoration-none">
-                <strong style="color: #001A5E;">Worried about debt?</strong><br>
-                <span class="text-custom">Find out where to get free, confidential help now</span>
-              </a>
+            <div class="mb-3">
+               <i class="bi bi-calculator" style="font-size: 4rem; color: #001A5E;"></i>
             </div>
+            <h2 class="tools-heading">Popular tools and calculators</h2>
+            <a href="#" class="tools-link">All tools & calculators</a>
           </div>
-          <div class="col-md-4">
-            <div class="card p-3">
-              <a href="../Budget_Tool/Budget_Planner.html" class="text-decoration-none">
-                <strong style="color: #001A5E;">Budget planner</strong><br>
-                <span class="text-custom">Get in control of household spending</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card p-3">
-              <a href="https://www.td.com/ca/en/personal-banking/products/mortgages/calculators-tools?GOOGLE&Mortgage+Calculator+-+Generic+-+English+(25_S_RL_RMO_AO_ACQ_ENFR)&Calculator+-+Generic&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyu34X6JYmTd7wEjMe8Nv_daVIYkyhnqmQe15B4HKRI4-CgJXqQIICRoCSj8QAvD_BwE&gclsrc=aw.ds" class="text-decoration-none">
-                <strong style="color: #001A5E;">Mortgage calculator</strong><br>
-                <span class="text-custom">A helping hand on the property ladder</span>
-              </a>
+    
+    
+          <div class="col-md-8">
+            <div class="row g-3">
+    
+              <div class="col-md-4">
+                <div class="card p-3">
+                  <a href="https://www.debtadvicecanada.ca/?utm_source=google&utm_medium=ppc&utm_campaign=debt-help-e&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyhsYHgKml-Q1KKp-6_YucF05EaCsVmvIOwg5SN9NNnk0NcQiIgHxxhoCMSsQAvD_BwE" class="text-decoration-none">
+                    <strong style="color: #001A5E;">Worried about debt?</strong><br>
+                    <span class="text-custom">Find out where to get free, confidential help now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3">
+                  <a href="../Budget_Tool/Budget_Planner.html" class="text-decoration-none">
+                    <strong style="color: #001A5E;">Budget planner</strong><br>
+                    <span class="text-custom">Get in control of household spending</span>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="col-md-4">
+                <div class="card p-3">
+                  <a href="https://www.td.com/ca/en/personal-banking/products/mortgages/calculators-tools?GOOGLE&Mortgage+Calculator+-+Generic+-+English+(25_S_RL_RMO_AO_ACQ_ENFR)&Calculator+-+Generic&gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyu34X6JYmTd7wEjMe8Nv_daVIYkyhnqmQe15B4HKRI4-CgJXqQIICRoCSj8QAvD_BwE&gclsrc=aw.ds" class="text-decoration-none">
+                    <strong style="color: #001A5E;">Mortgage calculator</strong><br>
+                    <span class="text-custom">A helping hand on the property ladder</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<footer class="bg-dark text-center p-3 mt-5">
-  <div class="container">
-      <p class="mb-1">&copy; BUDGET PLANNER</p>
-      <div>
-          <a href="https://www.facebook.com" target="_blank" class="me-3">
-              <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank" class="me-3">
-              <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" class="me-3">
-              <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-          </a>
+    </section>
+    
+    <footer class="bg-dark text-center p-3 mt-5">
+      <div class="container">
+          <p class="mb-1">&copy; BUDGET PLANNER</p>
+          <div>
+              <a href="https://www.facebook.com" target="_blank" class="me-3">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="me-3">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="me-3">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+          </div>
       </div>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
-</script>
-
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
