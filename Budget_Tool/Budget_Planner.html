@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <link rel="stylesheet" href="Budget.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header with Navigation and Search Bar</title>   
+    <title>Header with Navigation and Search Bar</title>
+    <link rel="stylesheet" href="Budget.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
   </head>
   <body>
   
     <header>
-      <a href="">
-        <img src="../image/logo.png" alt="logo" class="logo">
+      <a href="logo">
+        <img src="./image/logo.png" alt="logo" class="logo">
       </a>
       <div class="search-container">
         <input type="text" placeholder="Search...">
@@ -20,72 +23,208 @@
       </div>
     </header>
   
-    <nav>
-      <ul>
-        <li><a href="#home">Benefits</a></li>
-        <li><a href="Information-webpage/Information_Page - Copy.html">Everyday Money</a></li>
-        <li><a href="Information-webpage/Family - Copy.html">Family & care</a></li>
-        <li><a href="Information-webpage/Household bills - Copy.html">Household</a></li>
-        <li><a href="#home">Pensions</a></li>
-        <li><a href="/Information-webpage/Finance and Insurance - Copy.html">Savings</a></li>
-        <li><a href="#services">Work</a></li>
-        <li><a href="#contact">Money troubles</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Benefits
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">Benefits and Work</a></li>
+                <li><a class="dropdown-item" href="#">Benefits if You Have Children</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Benefits Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Everyday Money
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">Isurance</a></li>
+                <li><a class="dropdown-item" href="#">Banking and Payments</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Budget Planner</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Family & Care
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Childcare</a></li>
+                <li><a class="dropdown-item" href="#">Elder Care</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Baby costs calculator </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                House
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">Renting</a></li>
+                <li><a class="dropdown-item" href="#">Mortgages and Homebuying</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Mortgage Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pensions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">Tax and Pensions</a></li>
+                <li><a class="dropdown-item" href="#">Pensions and Retirement</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Pension Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Savings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">How to save</a></li>
+                <li><a class="dropdown-item" href="#">Investing</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Savings Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Work
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">Employment</a></li>
+                <li><a class="dropdown-item" href="#">Losing your job</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Redundancy pay Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tools and calculators
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+                <li><a class="dropdown-item" href="#">Benefits Calculator</a></li>
+                <li><a class="dropdown-item" href="#">Baby Costs Calculator</a></li>
+                <li><a class="dropdown-item" href="#">Mortgage Calculator</a></li>
+                <li><a class="dropdown-item" href="#">Pension Calculator</a></li>
+                <li><a class="dropdown-item" href="#">Savings Calculatorr</a></li>
+                <li><a class="dropdown-item" href="#">Redundancy pay Calculator</a></li>
+                <li><a class="dropdown-item" href="#">Budget Planner</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+</body>
+
     <!--Main text-->
-    <section style="padding-left: 70px; padding-top: 30px;">
-        <h1 style="color: blue;"><u>Budget Planner</u></h1>&nbsp;
-        <h3>Our tool allows you to keep track of how you spend your money</h3>&nbsp;
-        <h4>it allows you to</h4>&nbsp;
-        <li>&nbsp;
-            <h5><ol>A place to track all of your spending</ol></h5>
-            <h5><ol>Balance your income with savings and expenses</ol></h5>
-            <h5><ol>See where you could possible cut down on spending</ol></h5>
-        </li>&nbsp;
-        <h3>See how you can plan out your budget</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/toLttF_KIy0?si=IaNMYUJ-7_cHPjia" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>&nbsp;
-        <section style="padding-top: 60px;"></section>
-        <h3>You can also check out our budget planner</h3>&nbsp;
-        <a href="" style="text-decoration: none;">
-            <h1><div class="container bg-dark" style="color: aliceblue;">
-                Go to Budget_Planner
-            </div></h1>
-        </a>&nbsp;
-        <h1 style="color: blue;"><u>How can I Manage my budget better</u></h1>&nbsp;
-        <a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/creating-a-budget" style="text-decoration: none;">
-             <!--Image Card-->
-            <div class="card mb-3" style="max-width: 850px;" id="budgetCardlink">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="https://www.howtofire.com/wp-content/uploads/budgeting.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Need help with learning how to budget better?</h5>
-                      <p class="card-text">Budgeting puts you in charge of your money. Follow these steps to get started</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </a>
-        &nbsp;
-        <a href="Budget_Tool.html">
-          <!--Image Card-->
-          <div class="card mb-3" style="max-width: 850px;" id="budgetCardlink">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="https://www.howtofire.com/wp-content/uploads/budgeting.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Need the tools in order to see your budget?</h5>
-                  <p class="card-text">Use our free budget making program</p>
-                </div>
+    <section class="container py-4">
+      <h1 class="text-primary text-decoration-underline">Budget Planner</h1>
+      <h3 class="mt-3">Our tool allows you to keep track of how you spend your money</h3>&nbsp;
+      <h4 class="mt-3">It allows you to:</h4>
+      <div class="banner">
+        <div class="arrow"></div>
+        <span>
+          <strong></strong> 
+          <a href="#"><ul class="list-unstyled ms-3">
+            <li>
+                <h5>
+                    <ol>Track all of your spending</ol>
+                </h5>
+            </li>
+            <li>
+                <h5>
+                    <ol>Balance your income with savings and expenses</ol>
+                </h5>
+            </li>
+            <li>
+                <h5>
+                    <ol>Where you could possibly cut down on spending</ol>
+                </h5>
+            </li>
+        </ul></a>
+        </span>
+      </div>
+      <h3 class="mt-4">See how you can plan out your budget</h3>
+      <div class="ratio ratio-16x9 my-4">
+          <iframe 
+              src="https://www.youtube.com/embed/toLttF_KIy0?si=IaNMYUJ-7_cHPjia"
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+          </iframe>
+      </div>
+      <h3 class="mt-5">You can also check out our budget planner</h3>
+      <a href="Budget_Tool.html">
+        <!--Image Card-->
+        <div class="card mb-3" style="max-width: 850px;" id="budgetCardlink">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.howtofire.com/wp-content/uploads/budgeting.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Need the tools in order to see your budget?</h5>
+                <p class="card-text">Use our free budget making program</p>
               </div>
             </div>
           </div>
-        </a>
-    </section>
+        </div>
+      </a>
+      </a>&nbsp;
+      <h1 style="color: blue;"><u>How can I Manage my budget better</u></h1>&nbsp;
+      <a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/creating-a-budget" style="text-decoration: none;">
+           <!--Image Card-->
+          <div class="card mb-3" style="max-width: 850px;" id="budgetCardlink">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="data:image/jpeg;base64,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" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Need help with learning how to budget better?</h5>
+                    <p class="card-text">Budgeting puts you in charge of your money. Follow these steps to get started</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </a>
+      &nbsp;
+  </section>  
+  
+<footer class="bg-dark text-center p-3 mt-5">
+  <div class="container">
+      <p class="mb-1">&copy; BUDGET PLANNER</p>
+      <div>
+          <a href="https://www.facebook.com" target="_blank" class="me-3">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="me-3">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="me-3">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
+</script>
 </html>
 </body>
 </html>
