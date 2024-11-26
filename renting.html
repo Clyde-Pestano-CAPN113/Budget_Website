@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero {
+            background: #e3f2fd;
+            padding: 40px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Renting</h1>
+        <p>Your trusted guide for renting advice and resources</p>
+    </header>
+
+    <div class="hero">
+        <h2>Start your renting journey with confidence</h2>
+        <p>Discover essential tips, tools, and guides to make informed decisions about renting.</p>
+        <a href="#advice" class="btn btn-primary btn-lg">Get Advice</a>
+    </div>
+
+    <div class="container my-5">
+        <section id="advice">
+            <h2 class="section-title">Renting Advice</h2>
+            <p>Whether you're renting for the first time or looking for a new place, we've got you covered with advice on:</p>
+            <ul>
+                <li>Budgeting for rental costs</li>
+                <li>Understanding rental agreements</li>
+                <li>Your rights and responsibilities as a tenant</li>
+            </ul>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="resources">
+            <h2 class="section-title">Helpful Resources</h2>
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Budget Planner</h5>
+                            <img src="C:\Users\x\Desktop\Cpan web dev\Project\budget.jpeg" class="card-img-top" alt="Card image">
+                            <p class="card-text ">Managing your finances is essential when renting a home. Use our Budget Planner to estimate monthly expenses, including rent, utilities, and other essentials. Start planning today and enjoy stress-free renting with our easy-to-use tool!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Rental Checklist</h5>
+                            <img src="C:\Users\x\Desktop\Cpan web dev\Project\checklist.png" class="card-img-top" alt="Card image">
+                            <p class="card-text">Before signing a lease, ensure you’ve checked all the important details. A thorough checklist helps you avoid surprises and ensures a smooth renting experience!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Legal Advice</h5>
+                            <img src="C:\Users\x\Desktop\Cpan web dev\Project\legal.jpeg" class="card-img-top" alt="Card image">
+                            <p class="card-text">Understanding your legal rights as a tenant is crucial for a secure renting experience. Tenants are entitled to a safe and habitable living environment, privacy, and clear terms in the rental agreement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="faqs">
+            <h2 class="section-title">FAQs</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            How much should I budget for rent?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Experts recommend spending no more than 30% of your monthly income on rent. Ensure to factor in additional costs like utilities and maintenance.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            What should I check before signing a rental agreement?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Check the terms of the agreement, including rent amount, payment dates, maintenance responsibilities, and notice periods for termination.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                            What are my rights as a tenant?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Tenants have the right to a safe and habitable home, privacy, and a clear rental agreement. Check your local laws for specifics.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Budget Planner. All rights reserved.</p>
+        <p><a href="#contact">Contact Us</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
