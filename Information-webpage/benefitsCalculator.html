@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employment</title>
+    <title>Benefit Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="benefitCalculator.js"></script>
 </head>
 <body>
     <header>
@@ -121,19 +123,20 @@
     </nav>
 
     <main>
-        <h1>Employment</h1>
-        <p>
-            If you’re employed, there are some important things you should know.
-        </p>
-        <p>
-            We’ve looked at the basics of getting paid at work, so if you’re new to working this section is for you.
-        </p>
-        <p>
-            We’ve also created guidance to explain how tax and National Insurance works, because you need to make sure you understand how much of your pay packet you’ll get in your pocket.
-        </p>
-        <p>
-            Our section also covers employee benefits like salary sacrifice.
-        </p>
+        <h1>Benefit Calculator</h1>
+        <form id="calculator-form">
+            <label for="annualIncome">Annual Income (CAD):</label>
+            <input type="number" id="annualIncome" required>
+            
+            <label for="children">Number of Children Under 18:</label>
+            <input type="number" id="children" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <section id="results" style="display: none;">
+            <h3>Results</h3>
+            <p id="result-output"></p>
+        </section>
     </main>
 
     <div class="banner">
