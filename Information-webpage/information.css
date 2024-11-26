@@ -98,6 +98,51 @@ h3 {
   list-style-position: inside;
   background: linear-gradient(to bottom right, rgb(76, 97, 153) 50%, rgb(118, 127, 180) 50%);
 }
+#em_budget_planner_div {
+  text-align: center;
+}
+#em_budget_planner_button {
+  font-size: 50px;
+  width: 500px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: rgb(19, 59, 105);
+  color: rgb(250, 239, 239);
+  border: 10px groove rgb(46, 172, 204);
+}
+#em_budget_planner_button img {
+  width: 70px;
+}
+#em_personalize_your_budget {
+  background-color: rgb(19, 59, 105);
+  font-size: 40px;
+  color: rgb(250, 239, 239);
+  text-align: center;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+#em_personalize_your_budget p {
+  background-color: rgb(250, 239, 239);
+  color: black;
+  font-size: 20px;
+}
+#em_thead {
+  background-color: rgb(64, 141, 141);
+}
+#em_tbody select, #em_tbody input {
+  border: 5px solid rgb(52, 109, 109);
+  font-size: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#add_button, tfoot {
+  text-align: left;
+}
+/*
 tbody {
   background-color: rgb(84, 84, 194);
 }
@@ -105,6 +150,7 @@ thead {
   border: 1px solid black;
   background-color: rgb(68, 62, 62);
 }
+  */
 /*Family and care*/
 #fc_body {
   background-color: rgb(37, 134, 134);
