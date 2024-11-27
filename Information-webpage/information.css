@@ -24,13 +24,13 @@ h2 {
 }
 #em_img1 {
   border-radius: 250px;
-  width: 300px;
-  margin-left: 500px;
-  padding: 100px;
+  width: 400px;
+  margin-left: 550px;
+  padding: 50px;
 }
 #em_img2 {
   border-radius: 250px;
-  width: 300px;
+  width: 500px;
   padding: 100px;
 }
 #em_img3 {
@@ -250,7 +250,7 @@ header {
 }
 #fc_emotional_support {
   display: grid;
-  grid-template-columns: 1.7fr 0.7fr 0.7fr;
+  grid-template-columns: 1.6fr 0.7fr 0.7fr;
 }
 #fc_h2 {
   font-family: "Anton SC", serif;
@@ -266,6 +266,9 @@ header {
 #fc_video_p {
   font-size: 40px;
   text-align: center;
+}
+#fc_video_div {
+  border-top: 3px solid rgb(159, 180, 182);
 }
 #fc_ontario {
   text-align: center;
@@ -331,6 +334,11 @@ header {
   font-size: 30px;
   text-align: center;
 }
+#bf_video {
+  text-align: center;
+  justify-content: center;
+}
+/*footer*/
 footer {
   background-color: #222222; 
   color: #ffffff;
