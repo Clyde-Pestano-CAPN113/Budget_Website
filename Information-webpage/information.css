@@ -214,14 +214,16 @@ header {
   background-color: rgb(37, 134, 134);
 }
 #fc_title_div {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 #fc_title {
   font-family: "Anton SC", serif;
   font-size: 100px;
   text-align: center;
 }
-#fc_title_img, #fc_elder_care {
+#fc_title_img {
   display: grid;
   place-items: center;
 }
@@ -241,12 +243,32 @@ header {
   border: 5px solid rgb(173, 218, 221);
 }
 #fc_childcare p {
-  background-color: rgb(138, 209, 221);
+  background-color: rgb(131, 195, 206);
   padding: 30px;
 }
-#fc_elder_care_img {
-  width: 996px;
-  height: 560px;
+#fc_elder_care {
+  margin-top: 10px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 60px;
+}
+.fc_elder_care_img {
+  cursor: pointer;
+  width: 500px;
+  height: 300px;
+}
+#fc_btn1, #fc_btn2, #fc_btn3, #fc_btn4, #fc_btn5, #fc_btn6 {
+  background: none;
+  border: none;
+  padding: 0;
+}
+#fc_img1, #fc_img2, #fc_img3, #fc_img4, #fc_img5, #fc_img6 {
+  transition: transform 1.5 ease;
+}
+#fc_img1:hover, #fc_img2:hover, #fc_img3:hover, #fc_img4:hover, #fc_img5:hover, #fc_img6:hover {
+  transform: scale(1.5);
 }
 #fc_emotional_support {
   display: grid;
@@ -254,6 +276,7 @@ header {
 }
 #fc_h2 {
   font-family: "Anton SC", serif;
+  padding-top: 20px;
 }
 #fc_p {
   font-size: 40px;
@@ -337,6 +360,9 @@ header {
 #bf_video {
   text-align: center;
   justify-content: center;
+}
+#bf_by_applying {
+  border-top: 5px dotted #b0bacd;
 }
 /*footer*/
 footer {
