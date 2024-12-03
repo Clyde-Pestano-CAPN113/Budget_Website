@@ -15,7 +15,7 @@ document.getElementById('childcare_and_education').onclick = function() {
   }
 }
   */
- //everyday money
+ //family care
  $(document).ready(function() {
   $("#fc_btn1").click(function() {
     $("#fc_img2, #fc_img3, #fc_img4, #fc_img5, #fc_img6").hide();
