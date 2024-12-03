@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Header with Navigation and Search Bar</title>
+      <link rel="stylesheet" href="../Budget_Tool/Budget.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!--Start of logo and nav-->
+  <header>
+    <a href="../home-page/home-page.html">
+      <img src="../image/logo.png" alt="logo" class="logo">
+    </a>
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Benefits
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Benefits.html">Benefits and Work</a></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits.html">Benefits if You Have Children</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-family-benefits-calculator.html">Benefits Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Everyday Money
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Insurance.html">Isurance</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../Budget_Tool/Budget_Planner.html">Budget Planner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Family & Care
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Childcare.html">Childcare</a></li>
+              <li><a class="dropdown-item" href="https://caringforseniors.ca/?gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyuoGVgvo5QK00PO8BqNRgRR1SpnEO3q_JIBe9fGCJPIb9r5aNgpu0xoClwkQAvD_BwE">Elder Care</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.babycenter.com/baby-cost-calculator">Baby costs calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              House
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="../Information-webpage/Renting.html">Renting</a></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/financial-consumer-agency/services/buying-home.html">Mortgages and Homebuying</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Mortgage Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pensions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="">Tax and Pensions</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/retirement-income-calculator.html">Pension Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Savings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="#">How to save</a></li>
+              <li><a class="dropdown-item" href="#">Investing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="benefitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tools and calculators
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="benefitsDropdown">
+              <li><a class="dropdown-item" href="#">Benefits Calculator</a></li>
+              <li><a class="dropdown-item" href="#">Baby Costs Calculator</a></li>
+              <li><a class="dropdown-item" href="#">Mortgage Calculator</a></li>
+              <li><a class="dropdown-item" href="#">Pension Calculator</a></li>
+              <li><a class="dropdown-item" href="#">Savings Calculatorr</a></li>
+              <li><a class="dropdown-item" href="#">Redundancy pay Calculator</a></li>
+              <li><a class="dropdown-item" href="../Budget_Tool/Budget_Planner.html">Budget Planner</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+<!--Main Body-->
+<body id="em_body">
+  <h1 id="em_h1">Everyday Money</h1>
+  <p id="em_p">Everyday money refers to the funds allocated for routine, day-to-day expenses that are essential for maintaining a household and lifestyle. This includes a variety of costs that individuals or families incur regularly, typically on a monthly basis. Everyday money encompasses:</p>
+  
+  <div id="em_img">
+    <!--Basic Necessities-->
+    <div>
+      <a href="#em_basic_necessities"><img id="em_img1" src="information_img/OIP (1).jpg"></a> 
+    </div>
+    <!--Transportation Costs-->
+    <div>
+      <a href="#transportation_costs"><img id="em_img2" src="information_img/transportation_color_icons_22265.jpg"></a>
+      <!--Budget Planner-->
+      <a href="#budget_planner"><img id="em_img3" src="information_img/glass-money-jar-full-of-gold-coins-and-hand-growth-income-savings-investment-symbol-of-wealth-business-success-cartoon-design-vector.jpg"></a>
+      <!--Leisure and Entertainment-->
+      <a href="#leisure_and_entertainment"><img id="em_img2" src="information_img/pngtree-leisure-and-entertainment-at-home-vector-elements-png-image_2619237.jpg"></a>  
+    </div>
+    <div>
+      <!--Utilities and Services-->
+      <a href="#utilities_and_services"><img id="em_img4" src="information_img/OIP.jpg"></a> 
+      <!--Miscellaneous Expenses-->
+      <a href="#miscellaneous_expenses">
+      <img id="em_img4" src="information_img/jnpbvu6l.png"></a>
+    </div>
+  </div>
+  <!--Basic Necessities-->
+  <h2 id="em_basic_necessities">•	Basic Necessities<a href="#em_img3"><img id="em_dollar" src="information_img/59231-canada-canadian-of-dollar-banknotes-money-the.png"></a></h2>
+  <p id="em_p"><a href="https://en.wikipedia.org/wiki/Basic_needs" target="_blank">Expenses</a> for food, household supplies, and personal care items that are required for daily living.</p>
+  <p id="em_p">Professor Chris Sarlo, an economist at Nipissing University in North Bay, Ontario, Canada and a senior fellow of the Fraser Institute, uses Statistics Canada's socio-economic databases, particularly the Survey of Household Spending to determine the cost of a list of household necessities. The list includes food, shelter, clothing, health care, personal care, essential furnishings, transportation and communication, laundry, home insurance, and miscellaneous; it assumes that education is provided freely to all residents of Canada. This is calculated for various communities across Canada and adjusted for family size. With this information, he determines the proportion of Canadian households that have insufficient income to afford those necessities. Based on his basic needs poverty threshold, the poverty rate in Canada, the poverty rate has declined from about 12% of Canadian households to about 5% since the 1970s.</p>
+<!--Transportation Costs-->
+  <h2 id="transportation_costs">•	Transportation Costs<a href="#em_img3"><img id="em_dollar" src="information_img/59231-canada-canadian-of-dollar-banknotes-money-the.png"></a></h2>
+  <p id="em_p">Funds spent on commuting, whether through fuel for a personal vehicle, public transportation fares, or other travel-related expenses.</p>
+  <div id="em_video">
+    <iframe width="800px" height="560px" src="https://www.youtube.com/embed/kr-4ANZqSzs?si=_Nvbe-W68cimfOWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  
+<!--Leisure and Entertainment-->
+  <h2 id="leisure_and_entertainment">•	Leisure and Entertainment<a href="#em_img3"><img id="em_dollar" src="information_img/59231-canada-canadian-of-dollar-banknotes-money-the.png"></a></h2>
+  <h3>"Fairness for Every Generation"</h3>
+  <div id="em_leisure_and_entertainment_div">
+    <p id="em_p">Budget 2024 was tabled in Parliament on April 16, 2024, by the Honourable Chrystia Freeland, Deputy Prime Minister and Minister of Finance.</p>
+    <p id="em_p">Budget 2024, titled “Fairness for Every Generation,” underscores the government's commitment to fostering a fair and inclusive society for everyone in Canada.</p>
+    <p id="em_p">In total, it contains announcements of over $1 billion in new spending over five years for the Department of Canadian Heritage ($723.4 million) and Portfolio organizations ($307.2 million over five years).</p>
+  </div>
+  <!--Utilities and Services-->
+  <h2 id="utilities_and_services">•	Utilities and Services<a href="#em_img3"><img id="em_dollar" src="information_img/59231-canada-canadian-of-dollar-banknotes-money-the.png"></a></h2>
+  <p id="em_p">Regular payments for essential services like electricity, water, internet, and phone bills that support daily life.</p>
+  <div><!--https://www.canada.ca/en/department-finance/news/2023/03/a-made-in-canada-plan-affordable-energy-good-jobs-and-a-growing-clean-economy.html-->
+    <h3>Priorities</h3>
+    <div id="em_utilities_and_services">
+      <ul id="em_ul">
+        <li>Electrification</li>
+        <li>Clean Energy</li>
+        <li>Clean Manufacturing</li>
+        <li>Emissions Reduction</li>
+      </ul>
+      <ul id="em_ul">
+        <li>Critical Minerals</li>
+        <li>Infrastructure</li>
+        <li>Electric Vehicles & Batteries</li>
+        <li>Major Projects</li>
+      </ul>
+    </div>
+  </div>
+  <!--Miscellaneous Expenses-->
+  <h2 id="miscellaneous_expenses">• Miscellaneous Expenses<a href="#em_img3"><img id="em_dollar" src="information_img/59231-canada-canadian-of-dollar-banknotes-money-the.png"></a></h2>
+  <p id="em_p">Any other small, recurring costs that arise in everyday life, such as minor repairs, clothing purchases, or unexpected expenses.</p>
+    <div id="em_miscellaneous_expenses">
+      <img src="information_img/best-licensed-money-lender-in-singapore-1.png">
+      <div>
+        <p id="em_p">Miscellaneous Expenses List</p>
+      </div>
+    </div>
+    <ol id="em_ol">
+      <li>Repair and Maintenance: In case there is a need for any unexpected repairs or maintenance for company assets like machines or vehicles.</li>
+      <li>Unforeseen Emergencies: These are expenses for unexpected events like natural disasters, medical emergencies, car accidents, etc.</li>
+      <li>Travel Costs: These are incurred during travel and include baggage fees, tolls, parking, lodging, meals, etc.</li>
+      <li>Professional Services: These include fees paid to lawyers, consultants, and accountants for their services.</li>
+      <li>Professional Development Training: These provide employees with the necessary knowledge and skills to keep them updated.</li>
+      <li>Marketing Expenses: These include activities in relation to advertising or for creating public awareness about the products and services that the company offers.</li>
+      <li>Bank Charges and Fees: Companies have to incur charges for ATM withdrawals, wire transfers, overdraft fees, etc.</li>
+      <li>Clothing or Job Uniforms: Expenses for providing clothes required for safety reasons.</li>
+      <li>Gifts and Donations: Costs incurred to purchase gifts for birthdays or weddings and donations for charity events.</li>
+    </ol>
+  </div>
+  <!--Budget Planner-->
+  <h2 id="budget_planner">• Budget Planner<a href="#em_img3"><img id="em_dollar" src="information_img/59231-canada-canadian-of-dollar-banknotes-money-the.png"></a></h2>
+<<<<<<< HEAD
+  <!--https://www.savvynewcanadians.com/bank-fees-in-canada/-->
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Scotiabank Basic Plus Bank Account</th>
+        <th>HSBC Performance Chequing - Unlimited</th>
+        <th>RBC Day to Day Banking</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Monthly fee</th>
+        <th>$11.95 (free if you maintain balance of $3,000)</th>
+        <th>$14.95 (Free for people 60 or over)</th>
+        <th>$4 (rebate may be available for meeting certain conditions)</th>
+      </tr>
+      <tr>
+        <th>Debit transactions</th>
+        <th>25 per month included</th>
+        <th>Unlimited</th>
+        <th>12 debits a month, then $1.25 each</th>
+      </tr>
+      <tr>
+        <th>Interac e-Transfer transactions</th>
+        <th>Free</th>
+        <th>Free</th>
+        <th>Free (up to 999 per month)</th>
+      </tr>
+      <tr>
+        <th>Paper Statement</th>
+        <th>$2.25 per month</th>
+        <th>$2 per month</th>
+        <th>$2.25 per month (with cheque images)</th>
+      </tr>
+      <tr>
+        <th>Account closing fee</th>
+        <th>$20.00</th>
+        <th>$0</th>
+        <th>$15</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="em_budget_planner_div">
+    <button id="em_budget_planner_button">
+        <div>Start my budget</div>
+        <img src="information_img/5701368.png">
+    </button>
+  </div>
+  <div id="em_personalize_your_budget">
+    <div>Personalize your budget</div>
+    <div><p>Create a budget that suits your needs by selecting the answers that best reflect your situation. You'll receive personalized tips, suggestions and will be able to compare your budget with those of other Canadians like you.</p></div>
+    <div>
+      <table>
+        <thead id="em_thead">
+          <tr>
+            <th>Description</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="em_tbody">
+          <tr>
+            <td>
+              <select>
+                <option value="Basic Necessities">Basic Necessities</option>
+                <option value="Transportation Costs">Transportation Costs</option>
+                <option value="Leisure and Entertainment">Leisure and Entertainment</option>
+                <option value="Utilities and Services">Utilities and Services</option>
+                <option value="Miscellaneous Expenses">Miscellaneous Expenses</option>
+              </select>
+            </td>
+           
+            <td>
+              <input id="amount" type="number" value="10.00">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <select>
+                <option value="Basic Necessities">Basic Necessities</option>
+                <option value="Transportation Costs">Transportation Costs</option>
+                <option value="Leisure and Entertainment">Leisure and Entertainment</option>
+                <option value="Utilities and Services">Utilities and Services</option>
+                <option value="Miscellaneous Expenses">Miscellaneous Expenses</option>
+              </select>
+            </td>
+           
+            <td>
+              <input id="amount" type="number" value="10.00">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <select>
+                <option value="Basic Necessities">Basic Necessities</option>
+                <option value="Transportation Costs">Transportation Costs</option>
+                <option value="Leisure and Entertainment">Leisure and Entertainment</option>
+                <option value="Utilities and Services">Utilities and Services</option>
+                <option value="Miscellaneous Expenses">Miscellaneous Expenses</option>
+              </select>
+            </td>
+           
+            <td>
+              <input id="amount" type="number" value="10.00">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <select>
+                <option value="Basic Necessities">Basic Necessities</option>
+                <option value="Transportation Costs">Transportation Costs</option>
+                <option value="Leisure and Entertainment">Leisure and Entertainment</option>
+                <option value="Utilities and Services">Utilities and Services</option>
+                <option value="Miscellaneous Expenses">Miscellaneous Expenses</option>
+              </select>
+            </td>
+          
+            <td>
+              <input id="amount" type="number" value="10.00">
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <select>
+                <option value="Basic Necessities">Basic Necessities</option>
+                <option value="Transportation Costs">Transportation Costs</option>
+                <option value="Leisure and Entertainment">Leisure and Entertainment</option>
+                <option value="Utilities and Services">Utilities and Services</option>
+                <option value="Miscellaneous Expenses">Miscellaneous Expenses</option>
+              </select>
+            </td>
+            
+            <td>
+              <input id="amount" type="number" value="10.00">
+            </td>
+          </tr>  
+        </tbody>
+        
+        <tfoot>
+          <tr>
+            <td>
+              <button id="total_button">
+                <strong>Total:</strong>
+                <span id="total_display">\$0.00</span>
+              </button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  
+</body>
+</html>
