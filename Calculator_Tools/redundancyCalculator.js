@@ -16,7 +16,7 @@ document.getElementById("redundancy-form").addEventListener("submit", function (
     const endDate = new Date(dateEnded);
 
     if (endDate <= startDate) {
-        alert("The end date must be after the start date.");
+        alert("The date of redundancy must be after the start date.");
         return;
     }
 
@@ -24,13 +24,17 @@ document.getElementById("redundancy-form").addEventListener("submit", function (
     const result = calculateOntarioRedundancy(startDate, endDate, weeklyEarnings);
 
     // Display results
-    document.getElementById("results").innerHTML = `
+    const resultsSection = document.getElementById("results");
+    resultsSection.style.display = "block";
+
+    const resultOutput = `
         <h3>Redundancy Pay Calculation</h3>
         <p><strong>Years of Service:</strong> ${result.yearsOfService} years</p>
         <p><strong>Termination Pay:</strong> $${result.terminationPay}</p>
         <p><strong>Severance Pay:</strong> $${result.severancePay}</p>
         <p><strong>Total Pay:</strong> $${result.totalPay}</p>
     `;
+    document.getElementById("result-output").innerHTML = resultOutput;
 });
 
 function calculateOntarioRedundancy(startDate, endDate, weeklyEarnings) {
