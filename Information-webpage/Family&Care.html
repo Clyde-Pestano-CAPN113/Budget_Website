@@ -144,14 +144,58 @@
     <div id="fc_childcare">
       <h2 id="fc_h2">Childcare</h2>
       <p id="fc_p">This involves the responsibilities and expenses associated with raising children, including daycare, education, and extracurricular activities that support their development and well-being.</p>
+      <h2 id="fc_h2">Find a Child Care Near You</h2>
+      <p id="fc_p">Search and filter for a <a href="https://www.toronto.ca/community-people/children-parenting/children-programs-activities/licensed-child-care/" target="_blank">licensed child care</a> or a <a href="https://www.toronto.ca/community-people/children-parenting/children-programs-activities/before-after-school-programs/" target="_blank">before-after school program</a>before-after school program in Toronto.</p>
+      <ul id="fc_p">
+        <li>Families that need help with the cost of care, can apply for a <a href="https://www.toronto.ca/community-people/employment-social-support/child-family-support/child-care-support/" target="_blank">Child Care Fee Subsidy</a>.</li>
+        <li>Home child care options in Toronto can be found by contacting a licensed<a href="https://www.toronto.ca/community-people/children-parenting/children-programs-activities/licensed-child-care/home-child-care-agencies/" target="_blank">Home Child Care Agency</a>.</li>
+        <li>Before-after school care program information can be found on the <a href="https://www.toronto.ca/community-people/children-parenting/children-programs-activities/before-after-school-programs/" target="_blank">Before-After School Programs</a>page.</li>
+      </ul>
     </div>
   </div>
   <!--Elder Care-->
   <h2 id="fc_h2">Elder Care</h2>
   <p id="fc_p">This pertains to the care and support provided to aging family members, which may include financial assistance, health care services, and daily living support to ensure their comfort and safety.</p>
   <div id="fc_elder_care">
-    <img id="fc_elder_care_img" src="information_img/istockphoto-1460928397-2048x2048.jpg">
+    <div>
+      <a href="https://blog.caregivertoronto.ca/12-best-brain-stimulating-activities-for-seniors-caregivers-to-do/" target="_blank">
+        <img class="fc_elder_care_img" id="fc_img1" src="information_img/shutterstock_1380516614.jpg">
+      </a>
+      <button id="fc_btn1"><img width="60px" src="information_img/Elder-People-Transparent.png"></button>
+    </div>
+    <div>
+      <a href="https://seniorslifestylemag.com/care-giving/5-tips-to-consider-when-helping-kids-understand-eldercare/" target="_blank">
+        <img class="fc_elder_care_img" id="fc_img2" src="information_img/bigstock-139255382-scaled.jpg">
+      </a>
+      <button id="fc_btn2"><img width="60px" src="information_img/Elder-People-Transparent.png"></button>
+    </div>
+    <div>
+      <a href="https://www.hamiltonhealthsciences.ca/share/dance-study/" target="_blank"> 
+        <img class="fc_elder_care_img" id="fc_img3" src="information_img/what-are-the-health-benefits-of-dancing-for-seniors-1-800x533.jpg">
+      </a>
+      <button id="fc_btn3"><img width="60px" src="information_img/Elder-People-Transparent.png"></button>
+    </div>
+    <div>
+      <a href="https://www.cpp.ca/seniors-life-insurance/" target="_blank">
+        <img class="fc_elder_care_img" id="fc_img4" src="information_img/shutterstock_22089250-e1569194476693.jpg">
+      </a>
+      <button id="fc_btn4"><img width="60px" src="information_img/Elder-People-Transparent.png"></button>
+    </div>
+    <div>
+      <a href="https://theoldish.com/specialized-hospital-unit-opens-for-seniors/" target="_blank">
+        <img class="fc_elder_care_img" id="fc_img5" src="information_img/istockphoto-906833884-612x612.jpg">
+      </a>
+      <button id="fc_btn5"><img width="60px" src="information_img/Elder-People-Transparent.png"></button>
+    </div>
+    <div>
+      <a href="https://www.goodrx.com/health-topic/caregiving/caring-for-elderly-parents" target="_blank">
+        <img class="fc_elder_care_img" id="fc_img6" src="information_img/20150123RS4827572.webp">
+      </a>
+      <button id="fc_btn6"><img width="60px" src="information_img/Elder-People-Transparent.png"></button>
+    </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="information.js"></script>
   <!--Health and Wellness-->
   <h2 id="fc_h2">Health and Wellness</h2>
   <p id="fc_p"> Family and care also encompass the health-related expenses and services that families invest in to maintain the physical and mental well-being of all members, including health insurance, medical care, and wellness programs.</p>
@@ -164,9 +208,12 @@
       <p>
         The Canada Health Act helps ensure that all eligible residents of Canada have reasonable access to insured health services, without financial barriers. No Canadian should have to pay for medically necessary health care services, and the federal government is continuously working to uphold this principle for every Canadian.
       </p>
-      <p>
-        As part of the federal government's work to deliver better health outcomes for Canadians, it has now signed agreements with all provinces and territories to begin delivering the $25 billion in new funding available in the ten-year health care plan through bilateral agreements.
-      </p>
+      <div id="fc_video_div">
+        <p>
+          As part of the federal government's work to deliver better health outcomes for Canadians, it has now signed agreements with all provinces and territories to begin delivering the $25 billion in new funding available in the ten-year health care plan through bilateral agreements.
+        </p>
+      </div>
+      
     </div>
     <h3>Ontario</h3>
     <p id="fc_p">$2.5 billion over three years announced on February 9, 2024</p>
@@ -208,13 +255,28 @@
     </div>
   </div>
 
-
-
-
-
+<!--footer-->
+  <footer class="bg-dark text-center p-3 mt-5">
+    <div class="container">
+        <p class="mb-1">&copy; BUDGET PLANNER</p>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" class="me-3">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="me-3">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="me-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+  </footer>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js">
 </script>
-<script src="information.js"></script>
 </html>
