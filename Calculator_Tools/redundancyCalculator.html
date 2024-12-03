@@ -121,12 +121,14 @@
             <input type="date" id="date-ended" required>
         
             <label for="weekly-earnings">Weekly Earnings (CAD):</label>
-            <input type="number" id="weekly-earnings" required>
+            <input type="number" id="weekly-earnings" required step="0.01" required>
         
             <button type="submit">Submit</button>
         </form>
-        
-        <div id="results"></div>        
+        <section id="results" style="display: none;">
+          <h3>Results</h3>
+          <p id="result-output"></p>
+        </section>      
     </main>
 
     <div class="banner">

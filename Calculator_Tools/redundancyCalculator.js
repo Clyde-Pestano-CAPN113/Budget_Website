@@ -12,35 +12,39 @@ document.getElementById("redundancy-form").addEventListener("submit", function (
         return;
     }
 
+    const startDate = new Date(dateStarted);
+    const endDate = new Date(dateEnded);
+
+    if (endDate <= startDate) {
+        alert("The end date must be after the start date.");
+        return;
+    }
+
     // Calculate redundancy pay
-    const result = calculateOntarioRedundancy(dateStarted, dateEnded, weeklyEarnings);
+    const result = calculateOntarioRedundancy(startDate, endDate, weeklyEarnings);
 
     // Display results
     document.getElementById("results").innerHTML = `
         <h3>Redundancy Pay Calculation</h3>
-        <p>Years of Service: ${result.yearsOfService}</p>
-        <p>Termination Pay: $${result.terminationPay}</p>
-        <p>Severance Pay: $${result.severancePay}</p>
-        <p><strong>Total Pay: $${result.totalPay}</strong></p>
+        <p><strong>Years of Service:</strong> ${result.yearsOfService} years</p>
+        <p><strong>Termination Pay:</strong> $${result.terminationPay}</p>
+        <p><strong>Severance Pay:</strong> $${result.severancePay}</p>
+        <p><strong>Total Pay:</strong> $${result.totalPay}</p>
     `;
 });
 
-function calculateOntarioRedundancy(dateStarted, dateEnded, weeklyEarnings) {
-    // Parse dates
-    const startDate = new Date(dateStarted);
-    const endDate = new Date(dateEnded);
-
+function calculateOntarioRedundancy(startDate, endDate, weeklyEarnings) {
     // Calculate years of service
     const yearsOfService = getYearsOfService(startDate, endDate);
 
-    // Calculate termination pay
-    const terminationWeeks = Math.min(yearsOfService, 8); // Max 8 weeks
+    // Calculate termination pay (up to 8 weeks)
+    const terminationWeeks = Math.min(yearsOfService, 8);
     const terminationPay = terminationWeeks * weeklyEarnings;
 
-    // Calculate severance pay
+    // Calculate severance pay (if 5+ years of service, up to 26 weeks)
     let severancePay = 0;
     if (yearsOfService >= 5) {
-        const severanceWeeks = Math.min(yearsOfService, 26); // Max 26 weeks
+        const severanceWeeks = Math.min(yearsOfService, 26);
         severancePay = severanceWeeks * weeklyEarnings;
     }
 
@@ -55,7 +59,8 @@ function calculateOntarioRedundancy(dateStarted, dateEnded, weeklyEarnings) {
 
 function getYearsOfService(startDate, endDate) {
     const years = endDate.getFullYear() - startDate.getFullYear();
-    const isEarlierInYear = endDate.getMonth() < startDate.getMonth() || 
-                            (endDate.getMonth() === startDate.getMonth() && endDate.getDate() < startDate.getDate());
+    const isEarlierInYear =
+        endDate.getMonth() < startDate.getMonth() ||
+        (endDate.getMonth() === startDate.getMonth() && endDate.getDate() < startDate.getDate());
     return isEarlierInYear ? years - 1 : years;
 }

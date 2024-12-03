@@ -1,9 +1,14 @@
 document.getElementById("calculator-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const annualContribution = parseFloat(prompt("Enter your annual contribution (CAD):"));
-    const years = parseInt(prompt("Number of years until retirement:"));
-    const rate = parseFloat(prompt("Expected annual return rate (%):")) / 100;
+    const annualContribution = parseFloat(document.getElementById("annualContribution").value);
+    const years = parseInt(document.getElementById("years").value);
+    const rate = parseFloat(document.getElementById("rate").value) / 100;
+
+    if (isNaN(annualContribution) || isNaN(years) || isNaN(rate) || annualContribution <= 0 || years <= 0 || rate < 0) {
+        alert("Please enter valid inputs.");
+        return;
+    }
 
     const futureValue = annualContribution * ((Math.pow(1 + rate, years) - 1) / rate);
 

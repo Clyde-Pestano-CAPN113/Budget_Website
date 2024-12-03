@@ -1,10 +1,16 @@
 document.getElementById("calculator-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const diaperCost = 25; // Average weekly diaper cost
-    const formulaCost = 50; // Average weekly formula cost
-    const miscCost = 100; // Other costs (clothing, toys, etc.)
-    const weeks = parseInt(prompt("Number of weeks:"));
+    const weeks = parseInt(document.getElementById("weeks").value);
+
+    if (isNaN(weeks) || weeks < 0) {
+        alert("Please enter a valid number of weeks.");
+        return;
+    }
+
+    const diaperCost = 25;  // Weekly diaper cost
+    const formulaCost = 50; // Weekly formula cost
+    const miscCost = 100;   // Weekly miscellaneous costs
 
     const totalCost = (diaperCost + formulaCost + miscCost) * weeks;
 
