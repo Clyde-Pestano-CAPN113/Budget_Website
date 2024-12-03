@@ -1,9 +1,14 @@
 document.getElementById("calculator-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const principal = parseFloat(prompt("Enter the mortgage amount (CAD):"));
-    const annualRate = parseFloat(prompt("Enter the annual interest rate (%):")) / 100;
-    const years = parseInt(prompt("Enter the loan term (years):"));
+    const principal = parseFloat(document.getElementById("principal").value);
+    const annualRate = parseFloat(document.getElementById("annualRate").value) / 100;
+    const years = parseInt(document.getElementById("years").value);
+
+    if (isNaN(principal) || isNaN(annualRate) || isNaN(years) || principal <= 0 || annualRate < 0 || years <= 0) {
+        alert("Please enter valid inputs.");
+        return;
+    }
 
     const monthlyRate = annualRate / 12;
     const payments = years * 12;
